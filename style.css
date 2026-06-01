@@ -1,0 +1,86 @@
+/* Mantiene el estilo anterior */
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#chat-container {
+  width: 400px;
+  height: 600px;
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user {
+  background: #dcf8c6;
+  align-self: flex-end;
+}
+
+.bot {
+  background: #ececec;
+  align-self: flex-start;
+}
+
+#input-container {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+#input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 0 0 0 10px;
+}
+
+#send {
+  padding: 10px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 0 10px 0;
+}
+
+/* Estilo para las preguntas sugeridas */
+#suggested-questions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  background: #fafafa;
+}
+
+.suggestion {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.suggestion:hover {
+  background: #d0d0d0;
+}
