@@ -16,7 +16,7 @@ async function sendMessage(userMessage) {
   addMessage(userMessage, "user");
 
   try {
-    const response = await fetch("http://localhost:3000/ask", {
+    const response = await fetch("https://uasd-chatbot-xnqy.onrender.com/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ question: userMessage })
